@@ -12,9 +12,9 @@ checkBtn.addEventListener("click", ()=> {
     const validNumber = /^(1\s?)?(\(\d{3}\)|\d{3})([\s\-]?)\d{3}([\s\-]?)\d{4}$/;
 
     if (validNumber.test(userInput)) {
-        resultsDiv.textContent = `Valid US number: ${userInput}`;
+        resultsDiv.textContent = `Valid phone number: ${userInput}`;
     } else {
-        resultsDiv.textContent = `Invalid US number: ${userInput}`;
+        resultsDiv.textContent = `Invalid phone number: ${userInput}`;
     }
 
 });
@@ -22,3 +22,4 @@ checkBtn.addEventListener("click", ()=> {
 clearBtn.addEventListener("click", ()=> {
     resultsDiv.textContent = "";
 });
+
