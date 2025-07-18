@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cash Register</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <h1>Cash Register</h1>
+    <div class="container">
+        <h1>Cash Register</h1>
 
-    <div>
-        <label for="cash">Cash Provided: $</label>
-        <input type="number" id="cash">
+        <div class="price-display">
+            <p id="price-display"></p>
+        </div>
+
+        <div class="form-group">
+            <label for="cash">Cash Provided ($):</label>
+            <input type="number" id="cash" min="0" step="0.01" placeholder="e.g. 20.00" />
+        </div>
+
+        <div class="button-group">
+            <button id="purchase-btn">Purchase</button>
+        </div>
+
+        <div id="change-due" class="change-output"></div>
     </div>
-
-    <div>
-        <button id="purchase-btn">Purchase</button>
-    </div>
-
-    <div id="change-due"></div>
 
     <script src="./script.js"></script>
 </body>

@@ -25,6 +25,8 @@ const currencyUnit = {
     "ONE HUNDRED": 100
 };
 
+document.getElementById("price-display").textContent = `Total Price: $${price.toFixed(2)}`;
+
 // Purchase button
 document.getElementById("purchase-btn").addEventListener("click", () => {
     const cashInput = document.getElementById("cash");
@@ -101,3 +103,4 @@ document.getElementById("purchase-btn").addEventListener("click", () => {
         changeDueDiv.textContent = `Status: OPEN ${changeString}`;
     }
 });
+
